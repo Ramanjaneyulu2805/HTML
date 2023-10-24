@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <title>
+            WAJI CITY
+        </title>
+    </head>
+    <body>
+      <ul id="itemlist">
+        <li>cofee</li>
+        <li><a>tea</a></li>
+        <li>sugar</li>
+      </ul>
+        <div class="readydemo">hii fuck off</div>
+        WAJI CITY WAS INCLUDED IN MANY MOVIES
+        <h4 id="OG">OG</h4>
+        <p>OG film is directed by sujeeth and the protagonist in the wovie was <b>powerstar pawankalyan</b></p>
+        <a href="https://www.youtube.com/watch?v=ePOglweqy7o">Check the trailer of OG!!!</a>
+        <hr/>
+        <h4 id="sahoo">Sahoo</h4>
+        <p>Sahoo film is directed by sujeeth and the protagonist in the movie was <b>REBEL STAR PRABHAS</b> </p>
+        <a href="https://www.youtube.com/watch?v=lD0-ztCFydA">Check out the trailer</a>
+        <script>
+             $(function(){
+                $('div.readydemo').css('color','red')
+            })
+            $(function(){
+                $("a[href='https://www.youtube.com/watch?v=ePOglweqy7o']").text("check trailer with head phones").css('color','red')
+            })
+            $(function(){
+                $("button").click(function(){
+                $("ul").find('li').css('color','yellow')})
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Assignment-1
+        </title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <h1><u>ASSIGNMENT</u></h1> <button type="button">Click</button>
+        <div class = "class1"></div>
+
+    </hr>
+        <ul>
+       <li> <a href="https://www.edureka.com"><b> Edureka website</b></a></br> </li>
+       <li> <a href="https://www.youtube.com/@edurekaIN"><b> edureka youtube channel</b></a> </li>
+       
+        </ul>
+        <script>
+            $("button").click(function(){
+                $("a[href='https://www.edureka.com']").text('click on this EDUREKA WEBSITE link ').css('color','red')
+                $("a[href='https://www.youtube.com/@edurekaIN']").text('click on this Youtube link').css('color','red')
+                $(".class1").text('CLICK ON BELOW LINKS').css('color','black')
+            })
+        </script>
+
+    </body>
+</html>

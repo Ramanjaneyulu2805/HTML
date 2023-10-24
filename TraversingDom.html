@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            TRAVERSING THE DOM
+        </title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <button type="button">Click</button>
+        <p>afec</p>
+        <ul class="class" >
+          <li id ="litag"> this is li tag
+               <p>hii this is chitti the robot</p>
+              <div> <p class="cl">Speed 1 therabyte memory one chitabyte</p>hii fuck off</div>
+               <a href="https://www.youtube.com/watch?v=owPuQjInzO8">youtube</a></br>
+               <a href="https://www.imdb.com/title/tt5080556/fullcredits">titlecards</a>
+            </li>  
+            <li id ="tea">tea</li>
+            <li id ="cofee">cofee</li>
+        </ul>
+        
+        <p class="outoful">hii</p>
+        <script>
+           $(document).ready(function(){
+            $("button").click(function(){
+                $("#litag").closest('ul').css('color','red')
+            })
+           })
+        </script>
+    </body>
+</html>

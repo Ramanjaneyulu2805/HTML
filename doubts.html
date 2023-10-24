@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>hii</title>
+       <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div>
+            <a href="http://www.google.com" target=target1>google link</a>
+            <div id=target2>youtubelink</div>
+            <div id="divid"></div>
+            <button id="click">click on link</button>
+        </div>
+            <script>
+                $(document).ready(function(){
+                   $("#click").click(function(){
+                   var newtext= $("a").attr('href');
+                   $("#target2").text(newtext).css('color','green')
+                   })
+                })
+            </script>
+       
+    </body>
+</html>
